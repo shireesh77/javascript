@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div></div>
+    <script>
+        
+        a1=prompt("please enter your name","");
+        var b="hello"+ " "+a1+" "+"welcome to our website";
+        alert(b);
+
+        a2=+prompt("enter first number",""); 
+        b2=prompt("enter operator",);
+        c2=+prompt("enter second number","");
+        switch(b2){
+            case "+":s1=a2+c2;
+                     alert(s1)
+                     break;
+            case "-":s1=a2-c2;
+                     alert(s1)
+                     break;
+            case "*":s1=a2*c2;
+                     alert(s1)
+                     break;
+            case "/":s1=a2/c2;
+                     alert(s1)
+                     break;
+        }
+
+
+        d1=prompt("enter your age","")
+        d1>=18?alert("you are eligible to vote"):alert("you are too young to vote")
+       
+
+        e1=prompt("this is a temperature unit converter\nenter temp in celcius to convert it to farenheit ","")
+        e=e1*9/5+32;
+        alert(e)
+        
+        f1=prompt("enter any number\nto check if it is even or odd")
+        f1%2==0?alert(f1+" "+"is even"):alert(f1+" "+"is odd")
+
+
+        g1=prompt("enter your password","")
+        g1=="kitkat"?alert("correct password"):alert("incorrect password")
+
+    </script>
+</body>
+</html>

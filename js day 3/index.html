@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("problem 1\nenter an intiger\nto check if it is even or odd",)
+        if(a=null){alert("nplease provide input")}
+        if(a%2==0){alert(a+"is even")}
+        else{alert(a+"is odd")}
+
+
+
+        var b=prompt("problem 2\nenter a year to check if its leap year")
+        if(b%4==0){alert(b+" "+"is a leap year")}
+        else{alert(b+" "+"is not a leap year")}
+
+        
+
+        var c1=parseFloat(prompt("problem 3\nenter 1st value",""));
+        var c2=parseFloat(prompt("enter 2nd value",""));
+        var c3=parseFloat(prompt("enter 3rd value",""));
+        if(c1>c2&&c1>c3){
+            alert(c1);
+        }
+        else if(c2>c1&&c2>c3){
+            alert(c2);
+        }
+        else if(c1==c2==c3){
+            alert("all are same");
+        }
+        else{
+            alert(c3);
+        }
+
+
+
+            var d=prompt("problem 4\nenter the time")
+             if(d>=0&&d<=5){
+                alert("go to sleep")
+            }
+            else if(d>=6&&d<=11){
+                alert("good morning")
+            }
+            else if (d>=12&&d<=17){
+                alert("good afternoon")
+            }
+            else if(d>=18&&d<=23){
+                alert("good evening")
+            }
+            else{alert("enter between 00 and 24")}
+
+
+
+        var e=prompt("problem 5\nenter amount in INR")
+        var e2=prompt("enter the currency\nto which u want to covert")
+        switch(e2){
+            case "yen": var e3=e*1.78;
+                        alert(e3+"¥");
+                        break;
+            case "usd": var e3=e/83.33;
+                        alert(e3+"$");
+                        break;    
+            case "yen": var e3=e/22.6;
+                        alert(e3+"");
+                        break;        
+        }
+
+
+
+        var f=prompt("problem 6\nenter the traffic light color")
+        switch(f){
+            case "green": alert("go")
+            break;
+            case "yellow": alert("slow down")
+            break;
+            case "red": alert("stop")
+            break;
+        }
+
+
+
+        var g=prompt("problem 7\nenter month")
+        switch(g){
+            case "march":
+            case "april":
+            case "may":
+            alert("spring")
+            break;
+            case "june":
+            case "july": 
+            case "august":
+            alert("summer")
+            break;
+            case "september": 
+            case "october": 
+            case "november": 
+            alert("autumn")
+            break;
+            case "december": 
+            case "january":
+            case "february":
+            alert("winter")
+            break;
+        }
+
+
+
+        var h=prompt("problem 8\nenter actor name to see his movies")
+        switch(h){
+            case "rdj": alert("1.sherlock holmes\n2.sherlock holmes: a game of shadows\n3.iron man\n4.the avengers\n5.avengers: age of ultron\n6.avengers: infinity war")
+            break;
+            case "tobey maguire":alert("spider-man\nbrothers\nthe great gatsby\nspider-man: no way home\nthe ice storm")
+            break;
+            case "leonardo dicaprio":alert("titanc\nthe great gatsby\nwolf of the wallstreet\ninception\nJ.edgar")
+        }
+    </script>
+</body>
+</html>
