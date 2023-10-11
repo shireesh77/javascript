@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            border:  1px solid;
+            display: grid;
+            grid-template-areas:file file file ;
+            flex-wrap: wrap;
+            
+        }
+        .head{
+        display: flex;
+        justify-content: space-evenly;
+        
+            
+        }
+        b{margin: 5px;}
+        .diff{
+            border: 1px solid;
+            margin: 10px;
+            padding: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="head">
+        <b> for loop</b>
+        <b> while loop</b>
+        <b> do while loop</b>
+        </div>
+        <div class="diff" style="grid-area: 1;"></div>
+        <div class="diff" style="grid-area: 2;"></div>
+        <div class="diff" style="grid-area: 2;"></div>
+    </div>
+    <script>
+//even numbers
+        for(a=1;a<=10;a++){
+            document.write(a)
+        }
+
+//5 table
+for(a=1;a<=10;a++){
+            document.write("5*"+a+"="+a*5)
+        }
+
+//odd using for loop
+for(a=1;a<=10;a++){
+    console.log(a)
+    a++
+}
+
+//odd using whhile loop reverse order
+let b=30
+while(b>=0,b--){
+        console.log(a)
+    b--
+}
+
+//sum  of natural numbers 
+let a = 1;
+let sum = 0;
+
+do {
+  sum += a;
+  a++;
+} while (a <= 10);
+console.log( sum);
+
+    </script>
+</body>
+</html>
