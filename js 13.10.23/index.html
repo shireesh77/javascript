@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="one">the length of the string is :
+    </div>
+    <script>
+        //string length
+        var a="tamarind"
+        var b=a.length
+        document.write(b,"<br>")
+
+        //string slice
+        var c = "Apple, Banana, Kiwi";
+        var d = c.slice(7,13);
+        document.write(d,"<br>"); 
+
+        var c = "Apple, Banana, Kiwi ";
+        var d = c.slice(-5,-1);
+        document.write(d,"<br>"); 
+
+        var c = "Apple, Banana, Kiwi ";
+        var d = c.slice(7);
+        document.write(d,"<br>"); 
+
+        //substring
+        var c = "Apple, Banana, Kiwi ";
+        var d = c.substring(2,15);//2= start point, 15=length
+        document.write(d,"<br>"); 
+
+        var c = "Apple, Banana, Kiwi ";
+        var d = c.substring(9); //no second parameter hence rest of string
+        document.write(d,"<br>");
+
+        //substr/
+        var c = "Apple, Banana, Kiwi ";
+        var d = c.substr(-9); 
+        document.write(d,"<br>");
+
+        var c = "karna, suyodhana";
+        var d = c.substring(6); //no second parameter hence rest of string
+        document.write(d,"<br>");
+
+        var c = "karna, suyodhana";
+        var d = c.substr(-5); 
+        document.write(d,"<br>");
+
+        //string replace
+        var e ="lamborghini, maserati, koenigsegg"
+        var f=e.replace(" ","ferrari, ")
+        document.write(f,"<br>")
+
+        var e ="lamborghini, maserati, koenigsegg"
+        var f=e.replace("lam","ferrari")
+        document.write(f,"<br>")
+
+        var e ="lamborghini, maserati, koenigsegg"
+        var f=e.replace(/LAMBOR/i,"ferrari, ")//it is case sensitive hence it needs exact text to replace
+        document.write(f,"<br>")
+
+        //string replace all
+        var z = "I love cats. Cats are very easy to love. Cats are very popular";
+        z=z.replaceAll("cats","Dogs")
+        z=z.replaceAll("Cats","Dogs")
+        document.write(z,"<br>")
+
+        //string toUppercase
+        var z="jai ram chandramurthi"
+        var x=z.toUpperCase()
+        document.write(x,"<br>")
+
+        //string toLowerCase
+        var z="JAI RAM CHANDRAMURTHI"
+        var x=z.toLowerCase()
+        document.write(x,"<br>")
+
+        //string concat
+        var z="Jai ram"
+        var t="chandramurthi"
+        var s=z.concat("",x)
+        document.write(x+" -concat","<br>")
+
+        //string trim
+        var z="       vladimir putin     "
+        var m=z.trim() //using trim removes both sides(whitespace) 
+        document.write(m,"<br>")//using trimstart removes only at start and asame goes for trimend
+
+        //String padStart()
+        var k="5"
+        var j=k.padStart(5,"7")
+        document.write(j,"<br>")//this is a string method
+
+        var l=5
+        var k=l.toString()//it wont work for numbers so convert it into string
+        var j=k.padStart(5,"7")
+        document.write(j,"<br>")
+
+        //string padend
+        var k="5"
+        var j=k.padEnd(5,"7")//same rules of padstart
+        document.write(j,"<br>")
+        
+        //string charAt
+        var i="adolf hitler"
+        var v=i.charAt(6)
+        document.write(v,"<br>")
+
+        //string charCodeAt()
+        var i="adolf hitler"
+        var v=i.charCodeAt(6)
+        document.write(v,"<br>")
+
+        //split
+        var i="adolf hitler"
+        var v=i.split("")
+        document.write(v,"<br>")
+
+
+        //length of string without using string
+        var a="white"
+        var i=0
+        while(a[1]!==undefined){
+            i++
+        }
+
+        var q="hot chocolate"
+        document.getElementById("one").innerHTML = q.length;
+
+    </script>
+</body>
+</html>

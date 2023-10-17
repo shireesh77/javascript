@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // even using for loop
+    for (var a=0;a<=10;a++) {
+    if(a%2!=0){
+       continue;
+    }
+    console.log(a+" is even");
+    }
+
+
+
+    // odd using for loop
+    for (var a=0;a<=10;a++) {
+        if(a%2==0){
+        continue;
+    }
+    console.log(a+" is odd");
+    }
+
+
+
+    // both using for loop
+
+    for (var a=0;a<=10;a++) {
+        if(a%2!=0){
+       console.log(a+" is odd");
+    }
+        else{
+      console.log(a+" is even")
+    }
+    }
+
+
+
+     // both using function
+
+    var b=prompt("enter value to check odd/even")
+    function even(a){
+        if(a%2==0){
+    document.write("even")
+    }
+        else{
+    document.write("odd")
+    }
+    }
+    even(b);
+
+    //large number using function
+    var a=prompt("enter 1st value",)
+    var b=prompt("enter 2nd value",)
+    var c=prompt("enter 3rd value",)
+
+    function large(a,b,c){
+    if(a>b&&a>c){
+    console.log(a)
+    }
+    else if (b>a&&b>c){
+    console.log(b)
+    }
+    else{console.log(c)}
+    }
+    large(a,b,c)
+   
+    //large number using math function
+    var a=prompt("enter 1st value",)
+    var b=prompt("enter 2nd value",)
+    var c=prompt("enter 3rd value",)
+
+    function large(a, b, c) {
+     return Math.max(a, b, c);
+    }
+    console.log(large(a,b,c))
+
+
+
+    //even or odd check with if
+
+    function check(a) {
+     if (a%2==0) {
+    return "Even";
+    } else {
+    return "Odd";
+     }
+    }
+    var a=3
+    var b=check(a)
+    console.log(a + " is "+ b)
+
+
+    //even or odd check using ternery
+    function check(a) {
+    return a % 2 == 0 ? "Even" : "Odd";
+    }
+    var a=4
+    var b=check(a)
+    console.log(a + " is "+ b)
+
+
+    </script>
+
+</body>
+</html>

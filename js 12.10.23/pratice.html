@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // for(var i=1;i<=6;i++){
+        //     for(var j=1;j<=i;j++){
+        //         document.write("*");
+
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // for(var i=6;i>=1;i--){
+        //     for(var j=1;j<=i;j++){
+        //         document.write("*");
+
+        //     }
+        //     document.write("<br>");
+        // }
+        // for(var i=1;i<=6;i++){
+        //     for(var j=1;j<=i;j++){
+        //         document.write(j);
+
+        //     }
+        //     document.write("<br>");
+        // }
+
+        // for(var i=6;i>=1;i--){
+        //     for(var j=1;j<=i;j++){
+        //         document.write(j);
+
+        //     }
+        //     document.write("<br>");
+        // }
+
+        function siri(n){
+            for(i=n;i>=1;i--){
+                for(j=1;j<=i;j++){
+                    document.write(j);
+                }
+                document.write("<br>");
+            }
+        }
+        siri(20);
+
+//string reverse
+    var a="siri";
+    var b='';
+    var n=a.length-1;
+    for(i=n;i>=0;i--){
+      b+=a[i];
+    }
+    document.write(b,"<br>");
+
+  //palindrome
+
+  var a="tenet";
+var j=0,i=0;
+while(a[j]!==undefined){
+  j++;
+}
+j=j-1;
+while(i<j){
+if(a[i]!=a[j])
+break;
+i++;
+j--;
+}
+
+if(i==j){
+  document.write("it is palindrome","<br>");
+}
+else{
+  document.write("it is not a palindrome","<br>");
+}
+
+//length
+var a="raja";
+var i=0;
+while(a[i]!==undefined){
+  i++;
+}
+// i=i-1;
+document.write("the length of the string is:",i);
+
+//power unit problem
+var unit="50"
+if (unit>=1&&unit<=100){
+  var a=unit*2 
+  var b=(20*a)/100
+  var c=a+b 
+  console.log(c)
+}
+else if (unit>=101&&unit<=300){
+  var a=unit*3 
+  var b=(20*a)/100
+  var c=a+b 
+  console.log(c)
+}
+else if (unit>=301&&unit<=500){
+  var a=unit*4 
+  var b=(20*a)/100
+  var c=a+b 
+  console.log(c)
+}
+else if (unit>501){
+  var a=unit*6 
+  var b=(20*a)/100
+  var c=a+b 
+  console.log(c)
+}
+else{console.log("no bill")}
+    </script>
+</body>
+</html>
